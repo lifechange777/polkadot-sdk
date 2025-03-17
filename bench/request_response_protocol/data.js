@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1742077106863,
+  "lastUpdate": 1742181555745,
   "repoUrl": "https://github.com/paritytech/polkadot-sdk",
   "entries": {
     "request_response_protocol": [
@@ -24299,6 +24299,114 @@ window.BENCHMARK_DATA = {
             "name": "request_response_protocol/litep2p/serially/16MB",
             "value": 2408167203,
             "range": "± 29367185",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jose@blockdeep.io",
+            "name": "José Molina Colmenero",
+            "username": "Moliholy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38d2fa859861005157ccb249dca1378f015e0b06",
+          "message": "Add an extra_constant to pallet-treasury (#7918)\n\nAligned with #7206, this PR exposes `pallet-treasury`'s pot account as\nan extra constant. Users can this way for instance donate to the chain's\ntreasury account, or founders can easily spot it in case they require to\nfund it.\n\nIn any case this greatly reduces errors and headaches trying to figure\nout what's the pot's address.\n\n---------\n\nCo-authored-by: Bastian Köcher <git@kchr.de>\nCo-authored-by: Guillaume Thiolliere <gui.thiolliere@gmail.com>",
+          "timestamp": "2025-03-17T02:30:50Z",
+          "tree_id": "1207d313132c68f57279000c481d34f12b826a9b",
+          "url": "https://github.com/paritytech/polkadot-sdk/commit/38d2fa859861005157ccb249dca1378f015e0b06"
+        },
+        "date": 1742181539142,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "request_response_protocol/libp2p/serially/64B",
+            "value": 17872872,
+            "range": "± 252936",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/libp2p/serially/512B",
+            "value": 18304134,
+            "range": "± 236895",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/libp2p/serially/4KB",
+            "value": 19545882,
+            "range": "± 153540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/libp2p/serially/64KB",
+            "value": 23140861,
+            "range": "± 218856",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/libp2p/serially/256KB",
+            "value": 54323095,
+            "range": "± 1802583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/libp2p/serially/2MB",
+            "value": 353175235,
+            "range": "± 4746386",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/libp2p/serially/16MB",
+            "value": 2426359724,
+            "range": "± 156938408",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/litep2p/serially/64B",
+            "value": 14747184,
+            "range": "± 159740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/litep2p/serially/512B",
+            "value": 15123164,
+            "range": "± 374333",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/litep2p/serially/4KB",
+            "value": 15647826,
+            "range": "± 155912",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/litep2p/serially/64KB",
+            "value": 20156635,
+            "range": "± 165940",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/litep2p/serially/256KB",
+            "value": 51236052,
+            "range": "± 523630",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/litep2p/serially/2MB",
+            "value": 297548977,
+            "range": "± 4075212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "request_response_protocol/litep2p/serially/16MB",
+            "value": 2378648895,
+            "range": "± 22488290",
             "unit": "ns/iter"
           }
         ]
