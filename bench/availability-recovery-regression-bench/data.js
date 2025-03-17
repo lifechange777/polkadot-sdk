@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1742077761979,
+  "lastUpdate": 1742182140902,
   "repoUrl": "https://github.com/paritytech/polkadot-sdk",
   "entries": {
     "availability-recovery-regression-bench": [
@@ -48523,6 +48523,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "test-environment",
             "value": 0.18724844689999998,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jose@blockdeep.io",
+            "name": "José Molina Colmenero",
+            "username": "Moliholy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38d2fa859861005157ccb249dca1378f015e0b06",
+          "message": "Add an extra_constant to pallet-treasury (#7918)\n\nAligned with #7206, this PR exposes `pallet-treasury`'s pot account as\nan extra constant. Users can this way for instance donate to the chain's\ntreasury account, or founders can easily spot it in case they require to\nfund it.\n\nIn any case this greatly reduces errors and headaches trying to figure\nout what's the pot's address.\n\n---------\n\nCo-authored-by: Bastian Köcher <git@kchr.de>\nCo-authored-by: Guillaume Thiolliere <gui.thiolliere@gmail.com>",
+          "timestamp": "2025-03-17T02:30:50Z",
+          "tree_id": "1207d313132c68f57279000c481d34f12b826a9b",
+          "url": "https://github.com/paritytech/polkadot-sdk/commit/38d2fa859861005157ccb249dca1378f015e0b06"
+        },
+        "date": 1742182123812,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Sent to peers",
+            "value": 1.6666666666666665,
+            "unit": "KiB"
+          },
+          {
+            "name": "Received from peers",
+            "value": 307203,
+            "unit": "KiB"
+          },
+          {
+            "name": "availability-recovery",
+            "value": 11.196485061733338,
+            "unit": "seconds"
+          },
+          {
+            "name": "test-environment",
+            "value": 0.18769691423333332,
             "unit": "seconds"
           }
         ]
