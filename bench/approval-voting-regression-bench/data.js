@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1742077809936,
+  "lastUpdate": 1742182190936,
   "repoUrl": "https://github.com/paritytech/polkadot-sdk",
   "entries": {
     "approval-voting-regression-bench": [
@@ -79747,6 +79747,105 @@ window.BENCHMARK_DATA = {
           {
             "name": "approval-voting-parallel/approval-voting-parallel-3",
             "value": 2.3812161922499997,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jose@blockdeep.io",
+            "name": "José Molina Colmenero",
+            "username": "Moliholy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38d2fa859861005157ccb249dca1378f015e0b06",
+          "message": "Add an extra_constant to pallet-treasury (#7918)\n\nAligned with #7206, this PR exposes `pallet-treasury`'s pot account as\nan extra constant. Users can this way for instance donate to the chain's\ntreasury account, or founders can easily spot it in case they require to\nfund it.\n\nIn any case this greatly reduces errors and headaches trying to figure\nout what's the pot's address.\n\n---------\n\nCo-authored-by: Bastian Köcher <git@kchr.de>\nCo-authored-by: Guillaume Thiolliere <gui.thiolliere@gmail.com>",
+          "timestamp": "2025-03-17T02:30:50Z",
+          "tree_id": "1207d313132c68f57279000c481d34f12b826a9b",
+          "url": "https://github.com/paritytech/polkadot-sdk/commit/38d2fa859861005157ccb249dca1378f015e0b06"
+        },
+        "date": 1742182173804,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Sent to peers",
+            "value": 63611.7,
+            "unit": "KiB"
+          },
+          {
+            "name": "Received from peers",
+            "value": 52934.7,
+            "unit": "KiB"
+          },
+          {
+            "name": "approval-voting-parallel/approval-voting-parallel-3",
+            "value": 2.38422272562,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting-parallel/approval-voting-parallel-db",
+            "value": 1.8439895729799958,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-distribution/test-environment",
+            "value": 0.00002004006,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting-parallel/approval-voting-gather-signatures",
+            "value": 0.00554001877,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-distribution",
+            "value": 0.00002004006,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting-parallel/approval-voting-parallel-0",
+            "value": 2.3863943167199997,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting/test-environment",
+            "value": 0.00001960882,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting-parallel",
+            "value": 11.906425369160004,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting-parallel/approval-voting-parallel-1",
+            "value": 2.38282944897,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting",
+            "value": 0.00001960882,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting-parallel/approval-voting-parallel-2",
+            "value": 2.42093343322,
+            "unit": "seconds"
+          },
+          {
+            "name": "approval-voting-parallel/approval-voting-parallel-subsystem",
+            "value": 0.4825158528800098,
+            "unit": "seconds"
+          },
+          {
+            "name": "test-environment",
+            "value": 3.3465252796819747,
             "unit": "seconds"
           }
         ]
