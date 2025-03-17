@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1742077786268,
+  "lastUpdate": 1742182165220,
   "repoUrl": "https://github.com/paritytech/polkadot-sdk",
   "entries": {
     "availability-distribution-regression-bench": [
@@ -59965,6 +59965,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "test-environment",
             "value": 0.00870588576666675,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jose@blockdeep.io",
+            "name": "José Molina Colmenero",
+            "username": "Moliholy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38d2fa859861005157ccb249dca1378f015e0b06",
+          "message": "Add an extra_constant to pallet-treasury (#7918)\n\nAligned with #7206, this PR exposes `pallet-treasury`'s pot account as\nan extra constant. Users can this way for instance donate to the chain's\ntreasury account, or founders can easily spot it in case they require to\nfund it.\n\nIn any case this greatly reduces errors and headaches trying to figure\nout what's the pot's address.\n\n---------\n\nCo-authored-by: Bastian Köcher <git@kchr.de>\nCo-authored-by: Guillaume Thiolliere <gui.thiolliere@gmail.com>",
+          "timestamp": "2025-03-17T02:30:50Z",
+          "tree_id": "1207d313132c68f57279000c481d34f12b826a9b",
+          "url": "https://github.com/paritytech/polkadot-sdk/commit/38d2fa859861005157ccb249dca1378f015e0b06"
+        },
+        "date": 1742182148338,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Sent to peers",
+            "value": 18481.666666666653,
+            "unit": "KiB"
+          },
+          {
+            "name": "Received from peers",
+            "value": 433.3333333333332,
+            "unit": "KiB"
+          },
+          {
+            "name": "availability-distribution",
+            "value": 0.012251497626666663,
+            "unit": "seconds"
+          },
+          {
+            "name": "bitfield-distribution",
+            "value": 0.023827611919999995,
+            "unit": "seconds"
+          },
+          {
+            "name": "test-environment",
+            "value": 0.00839863262000007,
+            "unit": "seconds"
+          },
+          {
+            "name": "availability-store",
+            "value": 0.15539590434666672,
             "unit": "seconds"
           }
         ]
